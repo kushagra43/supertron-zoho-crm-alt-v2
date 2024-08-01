@@ -5,12 +5,17 @@
     padding: 0;
 }
 
+.main-header{
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
 .main-container {
-    margin: 0 auto;
-    padding: 20px;
     display: flex;
-    padding-left: 12rem;
-    padding-right: 6rem;
+}
+.small, small {
+    font-size: 100%;
+    font-weight: 400;
 }
 
 .title {
@@ -25,13 +30,20 @@
     margin: 10px 0;
 }
 
+.imagess{
+    padding-bottom: 6rem;
+    height: 40rem;
+
+}
+
 .main-heading span {
     color: #ff6f4a;
 }
 
 .intro-text {
-    font-size: 18px;
+    font-size: 21px;
     margin: 20px 0;
+    font-weight: 500;
 }
 
 .features-list {
@@ -46,13 +58,13 @@
 .feature-item {
     text-align: left;
     width: 100%;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 .feature-item i {
     color: green;
-    font-size: 28px;
-    margin-right: 10px;
+    font-size: 24px;
+    margin-right: 15px;
 }
 
 .cta-btn {
@@ -64,6 +76,23 @@
     font-size: 16px;
     cursor: pointer;
     text-decoration: none;
+}
+
+.nav-div{
+    display: flex;
+    justify-content:space-between ;
+    width: 100%;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.whyImg{
+    height: 3rem;
+    width: 3rem;
+}
+
+.whytext{
+    font-size: 20px;
 }
 
 .special-offer {
@@ -82,8 +111,7 @@
 }
 
 .image-wrapper img {
-    width: 30rem;
-    height: 30rem;
+    width: 35rem;
 }
 
 
@@ -149,11 +177,13 @@ a {
     padding-right: 6rem;
     display: flex;
     border-radius: 20px;
-
+    height: 32rem;
 }
 
+
 .carousel {
-    padding: 6rem;
+    padding: 2rem;
+    padding-top: 4rem;
     background-color: #f4f7fc;
     width: 100%;
 }
@@ -170,6 +200,8 @@ a {
     gap: 10px;
     padding: 6rem;
     background-color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .carousel-content-container h1 {
@@ -180,18 +212,27 @@ a {
 
 .carousel-content-container p {
     color: #343434;
-    font-size: 25px;
+    font-size: 20px;
+    margin-top: 30px;
 }
 
 .carousel-content-container button {
     color: #0067ff;
     display: inline-block;
-    padding: 10px 40px 10px 15px;
+    padding: 10px 15px 10px 15px;
     border: 1px solid #0067ff;
     font: 16px bold;
+    font-weight: bolder;
     border-radius: 20px;
     position: relative;
     cursor: pointer;
+    background-color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.footers{
+    gap: 300px;
 }
 
 .carousel-video-container {
@@ -202,6 +243,8 @@ a {
     align-items: center;
     background-image: url(//www.zohowebstatic.com/sites/zweb/images/crm/crm-features-bg-2x.jpg);
     padding: 4rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .carousel-control-prev-icon {
@@ -209,6 +252,10 @@ a {
     transform: rotate(180deg);
     font-size: 30px;
 
+}
+
+video{
+    height: 100%;
 }
 
 .carousel-control-next-icon {
@@ -341,6 +388,7 @@ a {
     background-color: #f4f7fc;
     padding-left: 12rem;
     padding-right: 12rem;
+    gap: 40px;
 }
 
 .step-rgt {
@@ -607,9 +655,9 @@ body {
 }
 
 .event-container {
-    max-width: 1200px;
+
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 40px 6rem;
     text-align: center;
 }
 
@@ -627,7 +675,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .event-card {
@@ -637,23 +685,23 @@ body {
     width: 300px;
     padding: 20px;
     box-sizing: border-box;
-    text-align: left;
+    text-align: center;
 }
 
 .event-card-icon {
-    font-size: 24px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
 .event-card-title {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .event-card-description {
-    font-size: 16px;
-    color: #666;
+    font-size: 18px;
+    color: #5a5a5a;
 }
 
 .header-glass-morph {
@@ -738,19 +786,11 @@ body {
 /* Why Zoho division */
 
 .why {
-    gap: 10px;
+    gap: 50px;
 }
 
-.whygrid {
-    display: grid;
-    column-gap: 40px;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 40px;
-}
 
-.whyimg {
-    height: 44px;
-}
+
 
 .hands {
     width: 480px;
@@ -1024,7 +1064,7 @@ body {
 }
 
 .small {
-    font-size: 14px;
+    font-size: 24px;
 }
 
 .bold {
@@ -1349,7 +1389,7 @@ body {
     }
 
     .small {
-        font-size: 12px;
+        font-size: 14px;
         text-align: center;
     }
 
@@ -1450,6 +1490,7 @@ body {
         justify-content: start;
         align-items: start;
         width: 100%;
+
     }
 
     .main-cont {
@@ -1625,6 +1666,7 @@ body {
         flex-direction: column;
         padding-left: 0;
         padding-right: 0;
+        height: 40rem;
     }
 
     .carousel-item {
@@ -1642,14 +1684,32 @@ body {
         width: 100%;
     }
 
-    .carousel-video-container {
-        padding: 1rem;
+    
+
+    video{
+        height: 100%;
+        width: 100%;
     }
 
     .carousel {
         padding: 1rem;
         background-color: #f4f7fc;
     }
+    .carousel-content-container h1 {
+        font-weight: bold;
+        color: #0067ff;
+        font-size: 30px;
+    }
+    .carousel-content-container p {
+        font-size: 17px;
+    }
+    
+.carousel h1{
+    font-size: 32px;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 
     .image-wrapper {
         margin-top: 40px;
@@ -1659,8 +1719,28 @@ body {
     }
 
     .image-wrapper img {
-        width: 22rem;
-        height: 22rem;
+        width: 17rem;
+        height: 17rem;
+    }
+
+    .imagess{
+        padding-bottom: 4rem;
+        height: 18rem;
+        margin-top: 4rem;
+    
+    }
+
+    .footers{
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 350px;
+    }
+    .main-header{
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
 }

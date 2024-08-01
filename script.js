@@ -173,7 +173,7 @@ function updateSlide(index) {
     slidesContent[index].post;
   document.getElementById("right-image").src = slidesContent[index].src;
   indicators.forEach((indicator, i) => {
-    indicator.classList.toggle("active", i === index);
+    indicator.classList.toggle("active1", i === index);
   });
   leftSlide.style.transform = `translateX(-${index * 100}%)`;
   rightSlide.style.transform = `translateX(-${index * 100}%)`;

@@ -275,6 +275,9 @@ a {
 .footers{
     gap: 300px;
 }
+.footer-img{
+    max-width: 550px;
+}
 
 .carousel-video-container {
     display: flex;
@@ -1705,7 +1708,7 @@ body {
     }
 
     .carousel-left {
-        width: 80%;
+        width: 100%;
     }
 
     .carousel-right {
@@ -1826,5 +1829,9 @@ body {
         width: 100%;
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .footer-img{
+        max-width: 360px;
     }
 }

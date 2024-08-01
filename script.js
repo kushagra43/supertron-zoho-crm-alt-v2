@@ -1,12 +1,13 @@
 document.querySelector("#myForm").addEventListener("submit", function (e) {
   e.preventDefault();
+  console.log("Form submitted");
 
   // Collect form data
   let formData = new FormData(this);
 
   const email = formData.get("email");
   if (email.endsWith("@qu.edu.qa")) {
-    // Show error message
+    console.log("Email domain not allowed");
     document.querySelector("#emailError").innerHTML =
       "Sorry, submissions from this domain are not allowed.";
     document.querySelector("#emailError").style.color = "red";
@@ -15,9 +16,9 @@ document.querySelector("#myForm").addEventListener("submit", function (e) {
   }
 
   const number = formData.get("mobilephone");
-
   var expr = /^(0|91)?[6-9][0-9]{9}$/;
   if (!expr.test(number)) {
+    console.log("Invalid phone number");
     document.querySelector("#mobileError").innerHTML =
       "Please enter a valid 10 digit mobile number";
     document.querySelector("#mobileError").style.color = "red";
@@ -25,6 +26,7 @@ document.querySelector("#myForm").addEventListener("submit", function (e) {
     return;
   }
 
+  console.log("Sending fetch request");
   // Send post request to the server
   fetch(
     "https://forms.hubspot.com/uploads/form/v2/23736002/688d8b8a-37c8-4bf1-bd94-9e2e31d4c0d8",
@@ -34,6 +36,7 @@ document.querySelector("#myForm").addEventListener("submit", function (e) {
     }
   )
     .then((response) => {
+      console.log("Response received", response.status);
       if (response.status >= 200 && response.status < 300) {
         // Show success message
         document.querySelector("#thankYou").innerHTML =
@@ -48,21 +51,21 @@ document.querySelector("#myForm").addEventListener("submit", function (e) {
         document.querySelector("#thankYou").style.display = "block";
       }
 
-      // Remove form
-      this.remove();
+      // Optionally remove form
+      // this.remove();
     })
     .catch((error) => {
-      console.error(error);
+      console.error("Fetch error:", error);
       // Show error message
       document.querySelector("#thankYou").innerHTML =
         "Something went wrong, please try again later.";
       document.querySelector("#thankYou").style.color = "red";
       document.querySelector("#thankYou").style.display = "block";
-      // Remove form
-      this.remove();
+
+      // Optionally remove form
+      // this.remove();
     });
 });
-
 // Slider Movements
 const moveSliderToLeft = () => {
   const scrollableElement = document.querySelector("#sliderCont");

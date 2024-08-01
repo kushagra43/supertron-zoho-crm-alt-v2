@@ -719,15 +719,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
 }
 
 .event-card {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     box-sizing: border-box;
     perspective: 1000px;
 }

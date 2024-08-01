@@ -681,7 +681,7 @@ body {
 
 .marquee-content {
     display: inline-block;
-    animation: marquee 200s linear infinite;
+    animation: marquee 360s linear infinite;
 }
 
 .marquee-content img {

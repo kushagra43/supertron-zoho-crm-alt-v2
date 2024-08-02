@@ -263,7 +263,7 @@ a {
     /* display: flex;
     flex-direction: column; */
     gap: 10px;
-    padding: 6rem;
+    padding: 3rem;
     background-color: white;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -272,12 +272,12 @@ a {
 .carousel-content-container h1 {
     font-weight: bold;
     color: #0067ff;
-    font-size: 50px;
+    font-size: 45px;
 }
 
 .carousel-content-container p {
     color: #343434;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 30px;
 }
 

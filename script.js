@@ -62,7 +62,6 @@ document.querySelector("#myForm").addEventListener("submit", function (e) {
       this.remove();
     });
 });
-
 // Slider Movements
 const moveSliderToLeft = () => {
   const scrollableElement = document.querySelector("#sliderCont");

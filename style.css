@@ -5,6 +5,14 @@
     padding: 0;
 }
 
+.brand-images{
+    height: 2rem;
+    width: 4rem;
+}
+
+#agappe{
+    width: 3rem;
+}
 
 .modal {
     display: none;

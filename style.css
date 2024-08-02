@@ -426,6 +426,11 @@ video{
     font-weight: bold;
 }
 
+.direction{
+    height: 2rem;
+    width: 2rem;
+}
+
 /* .licse-icn {
     background-position: -1044px -113px;
     width: 208px;
@@ -535,7 +540,7 @@ video{
     padding: 40px;
     position: relative;
     width: 65%;
-    height: 29rem;
+    height: 27rem;
     overflow: hidden;
 }
 
@@ -638,7 +643,7 @@ body {
 
 .navlogo {
     margin: auto 0;
-    height: 55px;
+    height: 65px;
 }
 
 /* Header */
@@ -2010,5 +2015,9 @@ body {
     .modal{
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+    .direction{
+        height: 1rem;
+        width: 1rem;
     }
 }

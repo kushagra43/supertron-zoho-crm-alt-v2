@@ -1085,6 +1085,15 @@ body {
     font-weight: 600;
     color: #ffffff;
 }
+.redbutton2 {
+    background: #de5547;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+}
 
 .zohoImg {
     display: inline;

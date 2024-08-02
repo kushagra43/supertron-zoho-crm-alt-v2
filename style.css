@@ -1571,6 +1571,7 @@ body {
         justify-content: start;
         align-items: start;
         width: 100%;
+        overflow-x: hidden;
 
     }
     .feature-item {
@@ -1780,6 +1781,8 @@ body {
     .carousel {
         padding: 1rem;
         background-color: #f4f7fc;
+        width: 100%;
+        overflow-x: hidden;
     }
     .carousel-content-container h1 {
         font-weight: bold;
@@ -1830,7 +1833,17 @@ body {
     }
     .main-header{
         padding-left: 1rem;
+        width: 100%;
         padding-right: 1rem;
+    }
+    .marquee-div{
+        width: 100%;
+        overflow-x: hidden
+    }
+
+    .whydiv{
+        width: 100%;
+        overflow-x: hidden
     }
 
     .nav-div{
@@ -1839,6 +1852,7 @@ body {
         width: 100%;
         padding-left: 1rem;
         padding-right: 1rem;
+        overflow-x: hidden
     }
 
     .footer-img{
@@ -1859,6 +1873,8 @@ body {
         margin: 0 auto;
         padding: 39px 1rem;
         text-align: center;
+        width: 100%;
+        overflow-x: hidden;
     }
     .carousel-control-next-icon, .carousel-control-prev-icon {
         display: none;
@@ -1872,4 +1888,12 @@ body {
         font-size: 28px;
         padding-bottom: 20px;
     }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .nav-container{
+        width: 100%;
+    }
+   
 }

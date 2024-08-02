@@ -129,28 +129,28 @@ const slidesContent = [
     right: "“Zoho CRM helps us bring our organisation together—pieces fragmented across emails, notebooks and different applications are now centralised. Zoho CRM is a game changer for us and for Indian businesses of the digital era.”",
     author: "Suresh Iyer,",
     post: "CIO, Blue Star Limited",
-    src: "/zoho-crm-alt-v2/brand18.svg",
+    src: "/brand18.svg",
   },
   {
     left: "India’s largest online Investment Platform Increases Productivity 5X by Implementing Zoho CRM",
     right: "“As a CRM manager, I can plug myself in directly to the sales team and make sure they never slip out of deals, with the help of working tips provided by Zia. In addition, Zoho Support is amazing. They have assisted me any time I needed help.”",
     author: "Divya Sundaraju,",
     post: "Assistant manager - Learning & Development, FundsIndia",
-    src: "/zoho-crm-alt-v2/fundsindia.svg",
+    src: "/fundsindia.svg",
   },
   {
     left: "A CRM deployment of this magnitude would normally require 18 to 24 months.",
     right: "“The launch of Zoho CRM is one of TAFE’s significant initiatives to drive digital transformation and growth. The solution with Zoho is very innovative and truly digital. There was a complete re-engineering of processes done for simplification, and Zoho team completed this project in an astounding six month.”",
     author: "Shobhana Ravi,",
     post: "Chief IT, Innovation and Learning Officer, TAFE",
-    src: "/zoho-crm-alt-v2/brand8.svg",
+    src: "/brand8.svg",
   },
   {
     left: "Agappe Diagnostics achieves complete digital business transformation with Zoho CRM",
     right: "“Zoho CRM offers us technology that allows us to be more proactive and insight-driven, with all information in a single place. With our complete business under control, our productivity is up by 80% in the last year that we have been using Zoho.”",
     author: "Thomas John,",
     post: "Managing Director, Agappe",
-    src: "/zoho-crm-alt-v2/brand4.svg",
+    src: "/brand4.svg",
   },
 ];
 

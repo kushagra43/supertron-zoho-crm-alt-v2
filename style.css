@@ -25,22 +25,25 @@
     backdrop-filter: blur(5px);
     justify-content: center;
     align-items: center;
+    position: relative;
   }
 
   .modal-content {
     background-color: rgba(0,0,0,0.4);
     backdrop-filter: blur(5px);    margin: 15% auto;
-    padding: 20px;
     border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
   }
 
   .close {
-    color: #aaa;
-    float: left;
-    font-size: 28px;
-    font-weight: bold;
+    color: #fffbfb;
+    font-size: 30px;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 92%  ;
+    left: 92%;
   }
 
   .close:hover,
@@ -60,6 +63,11 @@
 .main-container {
     display: flex;
 }
+
+.main-cont{
+    width: 80%;
+}
+
 .small, small {
     font-size: 100%;
     font-weight: 400;
@@ -72,7 +80,7 @@
 }
 
 .main-heading {
-    font-size: 42px;
+    font-size: 40px;
     font-weight: bold;
     margin: 10px 0;
 }
@@ -83,12 +91,17 @@
 
 }
 
+.logo-subhead{
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
 .main-heading span {
     color: #ff6f4a;
 }
 
 .intro-text {
-    font-size: 21px;
+    font-size: 20px;
     margin: 20px 0;
     font-weight: 500;
     padding-bottom: 10px;
@@ -106,7 +119,7 @@
 .feature-item {
     text-align: left;
     width: 100%;
-    font-size: 19px;
+    font-size: 17px;
 }
 
 .feature-item i {
@@ -154,12 +167,16 @@
 }
 
 .image-wrapper {
-    margin-top: 40px;
+    /* margin-top: 40px; */
     text-align: right;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
 
 .image-wrapper img {
-    width: 35rem;
+    width: 100%;
 }
 
 
@@ -300,8 +317,14 @@ a {
 
 .carousel-control-prev-icon {
     color: rgb(44, 44, 44);
-    transform: rotate(180deg);
-    font-size: 30px;
+    font-size: 80px;
+    position: relative;
+    bottom: 5%;
+
+}
+
+.carousel-control-prev{
+    background-color: #f4f7fc;
 
 }
 
@@ -311,7 +334,9 @@ video{
 
 .carousel-control-next-icon {
     color: rgb(44, 44, 44);
-    font-size: 30px;
+    font-size: 80px;
+    position: relative;
+    bottom: 5%;
 
 }
 
@@ -510,7 +535,7 @@ video{
     padding: 40px;
     position: relative;
     width: 65%;
-    height: 25rem;
+    height: 29rem;
     overflow: hidden;
 }
 
@@ -641,11 +666,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
     max-width: 500px;
     width: 100%;
     border-radius: 20px;
-    min-height: 500px;
+    min-height: 400px;
 }
 
 .header-form {
@@ -724,8 +748,16 @@ body {
 .event-cards {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     gap: 50px;
+}
+
+.event-card-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
 .event-card {
@@ -1103,7 +1135,7 @@ body {
 
 .blueheadingbig {
     font-size: 46px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 58px;
 }
 
@@ -1344,9 +1376,7 @@ body {
         font-size: 24px;
     }
 
-    .form-container {
-        margin-top: 40px;
-    }
+  
 }
 
 @media only screen and (max-width: 900px) {
@@ -1469,7 +1499,7 @@ body {
 
     .redbutton {
         padding: 16px 32px;
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .header-text-container {
@@ -1592,7 +1622,11 @@ body {
     .feature-item {
         text-align: left;
         width: 100%;
+        font-size: 15px;
+    }
+    .feature-item i {
         font-size: 16px;
+        margin-right: 10px;
     }
 
     .main-cont {
@@ -1600,6 +1634,7 @@ body {
         flex-direction: column;
         justify-content: start;
         align-items: start;
+        width: 100%;
     }
 
     .features-list {
@@ -1642,8 +1677,8 @@ body {
     }
 
     .redbutton {
-        padding: 16px 16px;
-        font-size: 15px;
+        padding: 12px 12px;
+        font-size: 12px;
     }
 
     .normal {
@@ -1820,6 +1855,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     .image-wrapper img {
@@ -1850,6 +1886,7 @@ body {
         padding-left: 1rem;
         width: 100%;
         padding-right: 1rem;
+        margin-top: 60px;
     }
     .marquee-div{
         width: 100%;
@@ -1892,12 +1929,8 @@ body {
         overflow-x: hidden;
     }
     .carousel-control-next-icon, .carousel-control-prev-icon {
-        display: none;
-        width: 20px;
-        height: 20px;
-        background: transparent no-repeat center center;
-        background-size: 100% 100%;
-        color: transparent;
+        color: black;
+        font-size: 40px;
     }
     .stephead{
         font-size: 28px;
@@ -1907,8 +1940,17 @@ body {
         margin: 0;
         padding: 0;
     }
-    .nav-container{
+    .nav-container {
+        background: #ffffff;
+        padding: 16px 0;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .body{
@@ -1919,5 +1961,54 @@ body {
         width: 100%;
         overflow-x: hidden;
     }
-   
+    .event-cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+    .event-card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 150px;
+        height: 100px;
+        box-sizing: border-box;
+        perspective: 1000px;
+    }
+    
+    .event-card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Creates 2 equal-width columns */
+        gap: 40px; /* Space between grid items */
+        justify-items: center; /* Center items horizontally within their grid cells */
+        align-items: center; /* Center items vertically within their grid cells */
+    }
+
+    .event-card-icon img {
+        height: 2rem;
+        width: 2rem;
+    }
+    .event-card-title{
+        font-size: 12px;
+    }
+    .event-card-description{
+        font-size: 11px;
+    }
+    
+    .event-card-wrapper .event-card:nth-child(3) {
+        grid-column: span 2; /* Span the third card across two columns */
+        justify-self: center; /* Center the third card within the spanning columns */
+    }
+    
+    .logo-subhead{
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .modal{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }

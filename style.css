@@ -513,7 +513,7 @@ video{
 }
 
 .carousel-left {
-    background-color: #004cff;
+    background-color: #1A3B7E;
     border-radius: 40px;
     color: #ffffff;
     padding: 40px;
@@ -849,6 +849,13 @@ body {
 .btn-fix {
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.btn-fix2 {
+    display: flex;
+    /* flex-direction: column; */
     align-content: flex-start;
     align-items: center;
     flex-wrap: wrap;

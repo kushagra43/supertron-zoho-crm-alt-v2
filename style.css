@@ -2004,8 +2004,6 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Creates 2 equal-width columns */
         gap: 40px; /* Space between grid items */
-        justify-items: center; /* Center items horizontally within their grid cells */
-        align-items: center; /* Center items vertically within their grid cells */
     }
 
     .event-card-icon img {
@@ -2019,10 +2017,7 @@ body {
         font-size: 11px;
     }
     
-    .event-card-wrapper .event-card:nth-child(3) {
-        grid-column: span 2; /* Span the third card across two columns */
-        justify-self: center; /* Center the third card within the spanning columns */
-    }
+   
     
     .logo-subhead{
         font-size: 8px;

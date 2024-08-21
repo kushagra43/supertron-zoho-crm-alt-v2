@@ -500,6 +500,8 @@ video{
     padding-right: 12rem;
     background-color: #f4f7fc;
     padding: 6rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .carousel-slide {

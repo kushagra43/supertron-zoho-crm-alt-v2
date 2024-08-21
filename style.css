@@ -742,6 +742,11 @@ body {
     text-align: center;
 }
 
+.card-img{
+    width: 3rem;
+    height: 3rem;
+}
+
 .event-title {
     font-size: 32px;
     font-weight: 500;

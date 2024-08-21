@@ -856,9 +856,11 @@ body {
 .btn-fix2 {
     display: flex;
     /* flex-direction: column; */
-    align-content: flex-start;
+    align-content: center;
     align-items: center;
     flex-wrap: wrap;
+    justify-items: center;
+    gap: 15px;
 }
 
 /* Brands division */

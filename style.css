@@ -765,8 +765,9 @@ body {
     gap: 50px;
 }
 
-.event-card-wrapper{
-    display: flex;
+.event-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     gap: 40px;

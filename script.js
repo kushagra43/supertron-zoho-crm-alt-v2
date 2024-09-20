@@ -16,14 +16,14 @@ document.querySelector("#myForm").addEventListener("submit", function (e) {
 
   const number = formData.get("mobilephone");
 
-  var expr = /^(0|91)?[6-9][0-9]{9}$/;
-  if (!expr.test(number)) {
-    document.querySelector("#mobileError").innerHTML =
-      "Please enter a valid 10 digit mobile number";
-    document.querySelector("#mobileError").style.color = "red";
-    document.querySelector("#mobileError").style.display = "block";
-    return;
-  }
+  // var expr = /^(0|91)?[6-9][0-9]{9}$/;
+  // if (!expr.test(number)) {
+  //   document.querySelector("#mobileError").innerHTML =
+  //     "Please enter a valid 10 digit mobile number";
+  //   document.querySelector("#mobileError").style.color = "red";
+  //   document.querySelector("#mobileError").style.display = "block";
+  //   return;
+  // }
 
   // Send post request to the server
   fetch(

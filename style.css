@@ -724,6 +724,7 @@ body {
 .marquee-content img {
     height: 50px;
     margin: 0 15px;
+    object-fit: contain;
 }
 
 @keyframes marquee {

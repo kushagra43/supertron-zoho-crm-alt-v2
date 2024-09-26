@@ -1,5 +1,22 @@
 document.querySelector("#myForm").addEventListener("submit", function (e) {
   e.preventDefault();
+  //Add UTM to document
+  function getParameterByName(name) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var url = window.location.href;
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+    var results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  }
+
+  // Populate hidden fields with UTM parameters from the URL
+  document.getElementById('utm_source').value = getParameterByName('utm_source');
+  document.getElementById('utm_medium').value = getParameterByName('utm_medium');
+  document.getElementById('utm_campaign').value = getParameterByName('utm_campaign');
+  document.getElementById('utm_term').value = getParameterByName('utm_term');
+  document.getElementById('utm_content').value = getParameterByName('utm_content');
 
   // Collect form data
   let formData = new FormData(this);

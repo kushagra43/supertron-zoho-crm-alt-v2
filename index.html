@@ -673,8 +673,15 @@
     }
   </script>
   <!-- Start of HubSpot Embed Code -->
-
-  <script type="text/javascript" id="hs-script-loader" async defer src="/js.hs-scripts.com/23736002.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var script = document.createElement('script');
+        script.id = 'hs-script-loader';
+        script.src = '//js.hs-scripts.com/23736002.js';
+        document.head.appendChild(script);
+    });
+  </script>
+  <!-- <script type="text/javascript" id="hs-script-loader" async defer src="/js.hs-scripts.com/23736002.js"></script> -->
   <!-- End of HubSpot Embed Code -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

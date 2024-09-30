@@ -32,7 +32,7 @@ document.querySelector("#myForm").addEventListener("submit", function (e) {
     return;
   }
 
-  const number = formData.get("mobilephone");
+  const number = formData.get("phone");
 
   // var expr = /^(0|91)?[6-9][0-9]{9}$/;
   // if (!expr.test(number)) {

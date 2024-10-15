@@ -24,7 +24,12 @@ document.querySelector("#myForm").addEventListener("submit", function (e) {
 
   // Add hs_context to the formData
 
-
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+    return null;
+  }
   let formData = new FormData(this);
 
   

@@ -20,28 +20,22 @@ document.querySelector("#myForm").addEventListener("submit", function (e) {
   document.getElementById('utm_content').value = getParameterByName('utm_content');
 
   // Collect form data
+
+
+  // Add hs_context to the formData
+
+
   let formData = new FormData(this);
 
-  const email = formData.get("email");
-  if (email.endsWith("@qu.edu.qa")) {
-    // Show error message
-    document.querySelector("#emailError").innerHTML =
-      "Sorry, submissions from this domain are not allowed.";
-    document.querySelector("#emailError").style.color = "red";
-    document.querySelector("#emailError").style.display = "block";
-    return;
-  }
+  
+  const hsContext = {
+  hutk: getCookie('hubspotutk'), // include the HubSpot user token if available
+  pageUrl: window.location.href, // captures the current page URL
+  pageName: document.title // captures the page title
+  };
 
-  const number = formData.get("phone");
-
-  // var expr = /^(0|91)?[6-9][0-9]{9}$/;
-  // if (!expr.test(number)) {
-  //   document.querySelector("#mobileError").innerHTML =
-  //     "Please enter a valid 10 digit mobile number";
-  //   document.querySelector("#mobileError").style.color = "red";
-  //   document.querySelector("#mobileError").style.display = "block";
-  //   return;
-  // }
+  // Add hs_context to formData as a JSON string
+  formData.append('hs_context', JSON.stringify(hsContext));
 
   // Send post request to the server
   fetch(

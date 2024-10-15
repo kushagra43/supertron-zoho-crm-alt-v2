@@ -1,4 +1,4 @@
-document.querySelector("#myForm").addEventListener("submit", function (e) {
+document.querySelector("#modal").addEventListener("submit", function (e) {
   e.preventDefault();
   //Add UTM to document
   function getParameterByName(name) {
